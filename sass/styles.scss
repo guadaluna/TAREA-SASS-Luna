@@ -1,0 +1,38 @@
+//Variables
+$color-fondo: #ff69b4;
+$color-fuentes:#faebd7;
+$tipografia-base: 'mali';
+
+
+//fuentes
+@font-face {
+    font-family: 'mali';
+    src: url(../assets/fonts/Mali-Regular.ttf);
+    }
+
+//Anidación
+
+nav{
+    background-color: $color-fondo;
+    ul{
+        margin: 10px;
+        padding: 0px;
+    }
+    li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    a{
+        display: block;
+        padding: 10px 12px;
+        text-decoration: none;
+        &:hover{
+            background-color: $color-fuentes;
+        }
+        &:active{
+            font-family: $tipografia-base;
+            font-size: 25px;
+            color: cornflowerblue;
+        }
+    }
+}
